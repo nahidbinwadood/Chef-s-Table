@@ -85,7 +85,7 @@ const Recipes = () => {
                                                 <td className="lg:px-6" >{data.recipe_name} </td>
                                                 <td className="lg:px-6" >{data.preparing_time} </td>
                                                 <td className="lg:pl-6">{data.calories}</td>
-                                                <td><button onClick={() => preparedFood(data,data.preparing_time,data.calories)} className='font-bold text-[#150B2B] px-4 py-3 lg:px-6 lg:py-3 rounded-full bg-[#0BE58A]'>Preparing</button></td>
+                                                <td><button onClick={() => preparedFood(data,data.preparing_time,data.calories)} className='font-bold text-[#150B2B] px-2 py-3 lg:px-6 lg:py-3 rounded-full bg-[#0BE58A]'>Preparing</button></td>
 
                                             </tr>
                                         ))
