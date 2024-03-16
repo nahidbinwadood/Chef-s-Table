@@ -26,11 +26,18 @@ const Recipes = () => {
             toast("Already Added !")
         }
     }
-    const preparedFood = (p) => {
+    const preparedFood = (p,time,calories) => {
         const notAvailable = data.filter((item) => item.recipe_name !== p.recipe_name);
         setData(notAvailable);
         setPrepare([...prepare, p]);
+
+        let sum=parseInt(time.slice(0,2));
+        let calSum=parseInt(calories.slice(0,3))
+
+        setTotalTime([parseInt(totalTime)+sum]);
+        setTotalCalories([ parseInt(totalCalories)+calSum]);
     }
+
 
 
 
@@ -78,7 +85,7 @@ const Recipes = () => {
                                                 <td className="lg:px-6" >{data.recipe_name} </td>
                                                 <td className="lg:px-6" >{data.preparing_time} </td>
                                                 <td className="lg:pl-6">{data.calories}</td>
-                                                <td><button onClick={() => preparedFood(data)} className='font-bold text-[#150B2B] px-4 py-3 lg:px-6 lg:py-3 rounded-full bg-[#0BE58A]'>Preparing</button></td>
+                                                <td><button onClick={() => preparedFood(data,data.preparing_time,data.calories)} className='font-bold text-[#150B2B] px-4 py-3 lg:px-6 lg:py-3 rounded-full bg-[#0BE58A]'>Preparing</button></td>
 
                                             </tr>
                                         ))
@@ -119,8 +126,8 @@ const Recipes = () => {
                                     <tr className="text-[#282828]">
                                         <td></td>
                                         <td></td>
-                                        <td className="lg:px-6">Total Time ={totalTime}</td>
-                                        <td className="lg:px-2">Total Calories={totalCalories}</td>
+                                        <td className="lg:px-6">Total Time ={totalTime} Minutes</td>
+                                        <td className="lg:px-2">Total Calories={totalCalories} kcal </td>
                                     </tr>
                                 </tfoot>
                             </table>
