@@ -7,6 +7,8 @@ const Recipes = () => {
     const [recipes, setRecipes] = useState([]);
     const [data, setData] = useState([]);
     const [prepare, setPrepare] = useState([]);
+    const [totalTime, setTotalTime] = useState(0);
+    const [totalCalories, setTotalCalories] = useState(0);
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch('data.json');
@@ -62,6 +64,7 @@ const Recipes = () => {
                             <table className="mx-auto">
                                 <thead>
                                     <tr className="text-[#878787]">
+                                        <td className="lg:px-6" >Serial</td>
                                         <td className="lg:px-6" >Name</td>
                                         <td className="lg:px-6" >Time</td>
                                         <td className="lg:px-6">Calories</td>
@@ -71,7 +74,7 @@ const Recipes = () => {
                                     {
                                         data.map((data, idx) => (
                                             <tr key={idx} className="text-[#282828]">
-                                                <td>{idx + 1} </td>
+                                                <td className="text-center">{idx + 1} </td>
                                                 <td className="lg:px-6" >{data.recipe_name} </td>
                                                 <td className="lg:px-6" >{data.preparing_time} </td>
                                                 <td className="lg:pl-6">{data.calories}</td>
@@ -116,8 +119,8 @@ const Recipes = () => {
                                     <tr className="text-[#282828]">
                                         <td></td>
                                         <td></td>
-                                        <td className="lg:px-6">Total Time ={}</td>
-                                        <td className="lg:px-2">Total Calories=</td>
+                                        <td className="lg:px-6">Total Time ={totalTime}</td>
+                                        <td className="lg:px-2">Total Calories={totalCalories}</td>
                                     </tr>
                                 </tfoot>
                             </table>
