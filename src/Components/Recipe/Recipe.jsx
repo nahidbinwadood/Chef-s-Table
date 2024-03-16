@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import img2 from './img/fire.png'
 import img3 from './img/Frame.png'
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe,wantToCook }) => {
     const { recipe_name, recipe_image, short_description, ingredients, preparing_time, calories } = recipe;
     return (
         <div className='space-y-6 p-6 border border-gray-400 rounded-2xl'>
@@ -37,13 +37,14 @@ const Recipe = ({ recipe }) => {
                     <h3>{calories} </h3>
                 </div>
             </div>
-            <button className='font-bold text-[#150B2B] px-4 py-3 lg:px-6 lg:py-3 rounded-full bg-[#0BE58A]'>Want to Cook</button>
+            <button onClick={()=>wantToCook(recipe)} className='font-bold text-[#150B2B] px-4 py-3 lg:px-6 lg:py-3 rounded-full bg-[#0BE58A]'>Want to Cook</button>
         </div>
     );
 };
 
 
 Recipe.propTypes = {
-    recipe: PropTypes.object.isRequired
+    recipe: PropTypes.object.isRequired,
+    wantToCook:PropTypes.func.isRequired
 }
 export default Recipe;
