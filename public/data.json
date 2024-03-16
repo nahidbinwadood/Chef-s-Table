@@ -1,0 +1,100 @@
+[
+    {
+      "recipe_name": "Spaghetti Carbonara",
+      "recipe_image": "https://i.ibb.co/9YtGsLS/1.png",
+      "short_description": "Classic Italian pasta dish with creamy sauce and crispy bacon.",
+      "ingredients": [
+        "Spaghetti",
+        "Eggs",
+        "Parmesan cheese",
+        "Bacon",
+        "Garlic",
+        "Black pepper"
+      ],
+      "preparing_time": "30 minutes",
+      "calories": "450 kcal"
+    },
+    {
+      "recipe_name": "Grilled Salmon with Asparagus",
+      "recipe_image": "https://i.ibb.co/YLvYBsS/chargrilled-salmon-with-asparagus-in-lime-vinaigrette-59335-1.jpg",
+      "short_description": "Healthy and delicious grilled salmon served with seasoned asparagus.",
+      "ingredients": [
+        "Salmon fillets",
+        "Asparagus",
+        "Olive oil",
+        "Lemon",
+        "Garlic",
+        "Salt",
+        "Black pepper"
+      ],
+      "preparing_time": "25 minutes",
+      "calories": "320 kcal"
+    },
+    {
+      "recipe_name": "Vegetable Stir-Fry",
+      "recipe_image": "https://i.ibb.co/NSdBBDX/vegetable-stir-fry-sauce-695104-hero-05-0f29ad92fd7141589cb1a773636d714b.webp",
+      "short_description": "Colorful and nutritious vegetable stir-fry with a flavorful sauce.",
+      "ingredients": [
+        "Broccoli",
+        "Carrots",
+        "Bell peppers",
+        "Mushrooms",
+        "Onion",
+        "Soy sauce",
+        "Sesame oil",
+        "Ginger",
+        "Garlic"
+      ],
+      "preparing_time": "20 minutes",
+      "calories": "200 kcal"
+    },
+    {
+      "recipe_name": "Chicken Caesar Salad",
+      "recipe_image": "https://i.ibb.co/3yxtV9k/2.png",
+      "short_description": "Classic Caesar salad with grilled chicken and homemade dressing.",
+      "ingredients": [
+        "Romaine lettuce",
+        "Grilled chicken breast",
+        "Parmesan cheese",
+        "Croutons",
+        "Caesar dressing"
+      ],
+      "preparing_time": "15 minutes",
+      "calories": "380 kcal"
+    },
+    {
+      "recipe_name": "Beef Chili",
+      "recipe_image": "https://i.ibb.co/cgs6NbZ/easy-ground-beef-chili-3053290-7-5b3f8cff46e0fb00375b1d6a.webp",
+      "short_description": "Hearty beef chili with beans, tomatoes, and spices, perfect for chilly nights.",
+      "ingredients": [
+        "Ground beef",
+        "Tomatoes",
+        "Kidney beans",
+        "Onion",
+        "Garlic",
+        "Chili powder",
+        "Cumin",
+        "Paprika"
+      ],
+      "preparing_time": "45 minutes",
+      "calories": "380 kcal"
+    },
+    {
+      "recipe_name": "Mushroom Risotto",
+      "recipe_image": "https://i.ibb.co/2P8PCkq/SES-mushroom-risotto-recipe-996005-hero-01-85f8cef9cf8042e8afbaa9d2e46c1fa8.webp",
+      "short_description": "Creamy and savory risotto cooked with mushrooms and Arborio rice.",
+      "ingredients": [
+        "Arborio rice",
+        "Mushrooms",
+        "Chicken or vegetable broth",
+        "Onion",
+        "Garlic",
+        "White wine",
+        "Parmesan cheese",
+        "Butter"
+      ],
+      "preparing_time": "35 minutes",
+      "calories": "320 kcal"
+    }
+  ]
+  
