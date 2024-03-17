@@ -61,7 +61,7 @@ const Recipes = () => {
 
                 {/* Cart Section */}
 
-                <div className="lg:flex lg:col-span-5 ">
+                <div className=" h-full g:h-[70vh] lg:col-span-5 ">
                     <div className="border border-gray-400 rounded-xl p-5">
                         <div className="text-center space-y-6">
                             <h2 className="text-2xl font-semibold text-black">Want to Cook: {data.length} </h2>
