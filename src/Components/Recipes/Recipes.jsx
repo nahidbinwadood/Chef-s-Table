@@ -126,7 +126,7 @@ const Recipes = () => {
                                     <tr className="text-[#282828] text-center">
                                         <td></td>
                                         <td></td>
-                                        <td className="lg:mx-6">Total Time ={totalTime} Minutes</td>
+                                        <td className="px-4">Total Time ={totalTime} Minutes</td>
                                         <td className="lg:mx-2">Total Calories={totalCalories} kcal </td>
                                     </tr>
                                 </tfoot>
