@@ -111,7 +111,7 @@ const Recipes = () => {
                                 <tbody>
                                     {
                                         prepare.map((prepare, idx) => (
-                                            <tr key={idx} className="text-[#282828] bg-gray-400 h-20 text-center">
+                                            <tr key={idx} className="text-[#282828] bg-gray-400 h-16 text-center">
                                                 <td>{idx + 1} </td>
                                                 <td className="lg:mx-6" >{prepare.recipe_name} </td>
                                                 <td className="lg:mx-6" >{prepare.preparing_time} </td>
@@ -126,8 +126,8 @@ const Recipes = () => {
                                     <tr className="text-[#282828] text-center">
                                         <td></td>
                                         <td></td>
-                                        <td className="px-4">Total Time ={totalTime} Minutes</td>
-                                        <td className="lg:mx-2">Total Calories={totalCalories} kcal </td>
+                                        <td className="px-4 py-2">Total Time = {totalTime} Minutes</td>
+                                        <td className="lg:mx-2">Total Calories= {totalCalories} kcal </td>
                                     </tr>
                                 </tfoot>
                             </table>
