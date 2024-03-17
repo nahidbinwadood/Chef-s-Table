@@ -61,31 +61,31 @@ const Recipes = () => {
 
                 {/* Cart Section */}
 
-                <div className="lg:col-span-5 ">
-                    <div className="border border-gray-900 rounded-xl p-5">
+                <div className="lg:flex lg:col-span-5 ">
+                    <div className="border border-gray-400 rounded-xl p-5">
                         <div className="text-center space-y-6">
                             <h2 className="text-2xl font-semibold text-black">Want to Cook: {data.length} </h2>
                             <div className='border border-[#30325E33] w-2/3 mx-auto'></div>
                         </div>
                         <div className="mt-5">
                             <table className="mx-auto">
-                                <thead>
+                                <thead className="h-20">
                                     <tr className="text-[#878787]">
                                         <td className="lg:px-6" >Serial</td>
                                         <td className="lg:px-6" >Name</td>
-                                        <td className="lg:px-6" >Time</td>
+                                        <td className="lg:px-10" >Time</td>
                                         <td className="lg:px-6">Calories</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {
                                         data.map((data, idx) => (
-                                            <tr key={idx} className="text-[#282828]">
+                                            <tr key={idx} className="text-[#282828] bg-gray-400 h-20">
                                                 <td className="text-center">{idx + 1} </td>
-                                                <td className="lg:px-6" >{data.recipe_name} </td>
-                                                <td className="lg:px-6" >{data.preparing_time} </td>
-                                                <td className="lg:pl-6">{data.calories}</td>
-                                                <td><button onClick={() => preparedFood(data,data.preparing_time,data.calories)} className='font-bold text-[#150B2B] px-2 py-3 lg:px-6 lg:py-3 rounded-full bg-[#0BE58A]'>Preparing</button></td>
+                                                <td className="lg:mx-6" >{data.recipe_name} </td>
+                                                <td className="lg:mx-6 text-center" >{data.preparing_time} </td>
+                                                <td className="lg:ml-6 text-center">{data.calories}</td>
+                                                <td className="lg:mx-6"><button onClick={() => preparedFood(data,data.preparing_time,data.calories)} className='font-bold text-[#150B2B] px-2 py-3 lg:px-6 lg:py-3 rounded-full bg-[#0BE58A]'>Preparing</button></td>
 
                                             </tr>
                                         ))
@@ -100,22 +100,22 @@ const Recipes = () => {
                         </div>
                         <div className="mt-5">
                             <table className="mx-auto">
-                                <thead>
+                                <thead className="h-20">
                                     <tr className="text-[#878787]">
                                         <td className="lg:px-6" >Serial</td>
-                                        <td className="lg:px-6" >Name</td>
-                                        <td className="lg:px-6" >Time</td>
-                                        <td className="lg:px-6">Calories</td>
+                                        <td className="lg:px-6 text-center" >Name</td>
+                                        <td className="lg:px-6 text-center" >Time</td>
+                                        <td className="lg:px-6 text-center" >Calories</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {
                                         prepare.map((prepare, idx) => (
-                                            <tr key={idx} className="text-[#282828]">
-                                                <td className="text-center">{idx + 1} </td>
-                                                <td className="lg:px-6" >{prepare.recipe_name} </td>
-                                                <td className="lg:px-6" >{prepare.preparing_time} </td>
-                                                <td className="lg:pl-6">{prepare.calories}</td>
+                                            <tr key={idx} className="text-[#282828] bg-gray-400 h-24 text-center">
+                                                <td>{idx + 1} </td>
+                                                <td className="lg:mx-6" >{prepare.recipe_name} </td>
+                                                <td className="lg:mx-6" >{prepare.preparing_time} </td>
+                                                <td className="lg:ml-6">{prepare.calories}</td>
                                             </tr>
                                         ))
                                     }
@@ -123,11 +123,11 @@ const Recipes = () => {
 
                                 </tbody>
                                 <tfoot>
-                                    <tr className="text-[#282828]">
+                                    <tr className="text-[#282828] text-center">
                                         <td></td>
                                         <td></td>
-                                        <td className="lg:px-6">Total Time ={totalTime} Minutes</td>
-                                        <td className="lg:px-2">Total Calories={totalCalories} kcal </td>
+                                        <td className="lg:mx-6">Total Time ={totalTime} Minutes</td>
+                                        <td className="lg:mx-2">Total Calories={totalCalories} kcal </td>
                                     </tr>
                                 </tfoot>
                             </table>

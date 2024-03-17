@@ -27,7 +27,7 @@ const Recipe = ({ recipe,wantToCook }) => {
             </div>
 
             <div className='border border-[#30325E33]'></div>
-            <div className='flex gap-12 text-[#878787]'>
+            <div className='flex justify-between px-2 text-[#878787]'>
                 <div className='flex items-center justify-center gap-2'>
                     <img className='size-6' src={img3} alt="" />
                     <h3>{preparing_time} </h3>
