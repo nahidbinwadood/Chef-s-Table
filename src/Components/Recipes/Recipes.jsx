@@ -71,7 +71,7 @@ const Recipes = () => {
                             <table className="mx-auto">
                                 <thead className="h-20">
                                     <tr className="text-[#878787]">
-                                        <td className="lg:px-6" >Serial</td>
+                                        <td className="lg:fl lg:px-6" >Serial</td>
                                         <td className="lg:px-6" >Name</td>
                                         <td className="lg:px-10" >Time</td>
                                         <td className="lg:px-6">Calories</td>
