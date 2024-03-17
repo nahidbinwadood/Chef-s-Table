@@ -111,7 +111,7 @@ const Recipes = () => {
                                 <tbody>
                                     {
                                         prepare.map((prepare, idx) => (
-                                            <tr key={idx} className="text-[#282828] bg-gray-400 h-24 text-center">
+                                            <tr key={idx} className="text-[#282828] bg-gray-400 h-20 text-center">
                                                 <td>{idx + 1} </td>
                                                 <td className="lg:mx-6" >{prepare.recipe_name} </td>
                                                 <td className="lg:mx-6" >{prepare.preparing_time} </td>
