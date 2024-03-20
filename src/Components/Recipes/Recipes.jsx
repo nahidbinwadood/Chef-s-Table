@@ -120,7 +120,6 @@ const Recipes = () => {
                                         ))
                                     }
 
-
                                 </tbody>
                                 <tfoot>
                                     <tr className="text-[#282828] text-center">
