@@ -38,8 +38,6 @@ const Recipes = () => {
         setTotalCalories([ parseInt(totalCalories)+calSum]);
     }
 
-
-
     return (
         <div className="my-20  mx-4 lg:mx-0">
             <div className="text-center space-y-6">
